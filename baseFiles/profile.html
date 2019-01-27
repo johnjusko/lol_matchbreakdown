@@ -1,0 +1,329 @@
+<html>
+  <head>
+    <title>
+      Shitty OP.GG Landing
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://www.chartjs.org/dist/2.7.3/Chart.bundle.js"></script>
+    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+
+    
+    <style>
+    body {background-image: url("https://images.pexels.com/photos/1309766/pexels-photo-1309766.jpeg?cs=srgb&dl=apple-devices-apple-keyboard-close-up-1309766.jpg&fm=jpg");
+          background-size: cover;
+      }
+    #title{
+      font-family: 'Bangers';
+      font-size: 400%;
+      color: white;
+      text-align: center;
+      }
+      .sumBox {
+        width: 99%; height: auto; border-style: solid; border-width: thin; border-radius: 5px; margin-left: 4%; font-size: 80%; text-align: center; font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <br>
+    <br>
+    <h1 id="title">
+      Profile Breakdown: SUMMONERNAME
+    </h1>
+    <br>
+    <br>
+    <div class="row" style="width: 90%; margin: auto; height: 80%; ">
+      <div class="col">
+        <div style="height: 100%; width: 100%; border-radius: 25px; background-color: white;">
+          <br>
+          <img src="https://catking.in/wp-content/uploads/2017/02/default-profile-1.png" id="sumIcon" style="width: 40%; height: auto; border-style: solid; border-radius: 45px; margin-left: 30%;">
+          <h1 style="font-family: 'Bangers'; text-align: center; font-size: 400%;">SUMMONERNAME</h1>
+          <h1 id="plrLevel" style="font-family: 'Bangers'; text-align: center; font-size: 200%;">Level 0</h1>
+          <div style="width: 100%; height: .5%; background-color: black">    
+          </div>
+          <h1 style="font-family: 'Bangers'; text-align: center; margin-top: 1%; font-size: 200%;">Most Played Champions</h1>
+          <div class="row" style="width: 100%; margin: auto;">
+            <div class="col" >
+              <img id="pChamp0" src="null" style="width: 100%; height: auto;">
+            </div>
+            <div class="col">
+               <img id="pChamp1" src="null" style="width: 100%; height: auto;">
+            </div>
+            <div class="col">
+               <img id="pChamp2" src="null" style="width: 100%; height: auto;">
+            </div>
+            <div class="col">
+               <img id="pChamp3" src="null" style="width: 100%; height: auto;">
+            </div>
+            <div class="col">
+               <img id="pChamp4" src="null" style="width: 100%; height: auto;">
+            </div>
+          </div>
+          <div style="width: 100%; height: .5%; background-color: black; margin-top: 1%;">    
+          </div>
+          <h1 id="ranked" style="font-family: 'Bangers'; text-align: center; margin-top: 1%;">Ranked: </h1>
+        </div>
+      </div>
+      <div class="col-7">
+        <div style="width: 95%; height: auto; margin: auto; background-color: white; border-radius: 25px;">
+            <h1 style="font-family: 'Bangers'; text-align: center; font-size: 230%; text-shadow: 2px 2px 4px #8b8b8b">Match Breakdown</h1>
+            <div class="row" style="width: 100%; height: auto;">
+              <div class="col">
+                <div id="sum0" class="sumBox">
+                  
+                </div>
+                <div id="sum1" class="sumBox">
+                  
+                </div>
+                <div id="sum2" class="sumBox">
+                  
+                </div>
+                <div id="sum3" class="sumBox">
+                  
+                </div>
+                <div id="sum4" class="sumBox">
+                  
+                </div>
+              </div>
+              <div class="col-2">
+                
+                <h1 style="font-family: 'Bangers'; font-size: 400%; text-align: center;">
+                  VS
+                </h1>
+              </div>
+              <div class="col">
+                <div id="sum5" class="sumBox">
+                  
+                </div>
+                <div id="sum6" class="sumBox">
+                  
+                </div>
+                <div id="sum7" class="sumBox">
+                  
+                </div>
+                <div id="sum8" class="sumBox">
+                  
+                </div>
+                <div id="sum9" class="sumBox">
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+        <br>
+        <!––This is directly under the match breakdown section-->
+        <div class="row">
+            <div class="col">
+        <div style="width: 95%; height: 76.5%; margin: auto; background-color: white; border-radius: 25px;">
+           <h1 style="font-family: 'Bangers'; text-align: center; font-size: 230%; text-shadow: 2px 2px 4px #8b8b8b">Player Analysis</h1>          
+              <div style="width: 100%; height: 50%; margin: auto; margin-left: -0%;">
+                  <canvas id="graph">
+            
+                  </canvas>
+                
+              </div> 
+                <h5 style="text-align: center;"> 
+                  CS Difference Per Minute
+                </h5>
+                <p id="csdiff" style="text-align: center;">
+                  0 CS/Min
+                </p>
+                <h5 style="text-align: center;"> 
+                  XP Difference Per Minute
+                </h5>
+                <p id="xpdiff" style="text-align: center;">
+                  0 XP/Min
+                </p>
+                <h5 style="text-align: center;"> 
+                  Damage Difference Per Minute
+                </h5>
+                <p id="dmgdiff" style="text-align: center;">
+                  0 HP/Min
+                </p>
+              </div>
+            </div>
+          <div class="col">
+                <div style="width: 95%; height: 76.5%; margin: auto; background-color: white; border-radius: 25px;">
+                   <h1 style="font-family: 'Bangers'; text-align: center; font-size: 230%; text-shadow: 2px 2px 4px #8b8b8b">What do my stats mean?</h1> 
+                  <p style="width: 90%; margin: auto;">
+                    trubStats.gg focuses on how you can improve in the laning phase, which then translates into the rest of the game. 
+                  The three stats you can find in the left bar are intended to represent your laning performance.              
+                    <br>
+                    <br>
+                    XP Difference represents how much XP you gain during the lane phase, respective to your lane opponent. For thsi stat, a higher value is better.
+                    <br><br>
+                    CS Difference represents how many minions you last hit in lane, respective to your lane opponent. For this stat, a higher value is better.
+                    <br><br>
+                    Damage Difference represents how much damage you take in lane, respective to your lane opponent. For thsi stat, a lower value is better.
+                    <br><br>
+                    Stats where you performed well are green, stars where you performed poorly are red.
+                  </p>
+                  
+                </div>
+            </div>
+        </div>
+          
+      </div>
+      <div class="col">
+        <div id="matchList" style="height: 100%; width: 100%; border-radius: 25px; background-color: white;">
+              <h1 style="font-family: 'Bangers'; text-align: center; font-size: 300%;">Match History</h1>
+          
+          </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function loadMatch(id){
+      console.log(id);
+      var http2 = new XMLHttpRequest();
+      http2.open("GET", "http://trubstats.tru.io/apiCall:getMatch?" + id + "?SUMMONERNAME", false);
+      http2.send();
+      var js = http2.responseText;
+      console.log(http2.responseText);
+      let matchData = JSON.parse(js);
+      console.log(matchData);
+      for (i=0; i<10; i++){
+                document.getElementById("sum" + i).innerHTML = "";
+        if (matchData[0][i][0] == "SUMMONERNAME"){
+          document.getElementById("sum" + i).innerHTML+=">>>";
+        }
+        for (key in championJSON["data"]){
+            if (championJSON["data"][key]["key"] == String(matchData[0][i][1])){
+              document.getElementById("sum" + i).innerHTML+= championJSON["data"][key]["name"];
+            }
+        }
+        document.getElementById("sum" + i).innerHTML+=" (" + matchData[0][i][0] + ")";
+        if (matchData[0][i][0] == "SUMMONERNAME"){
+          document.getElementById("sum" + i).innerHTML+="<<<";
+        }
+      }
+      //each item should range from 0-1 ish
+      var neutralCS = (matchData[1]["timeline"]["csDiffPerMinDeltas"]["0-10"] + 5) / 10;
+      var neutralDMG = -(1 / (1 + Math.pow(Math.E, -((matchData[1]["timeline"]["damageTakenDiffPerMinDeltas"]["0-10"] / 250) + .7))));
+      var neutralXP = (-matchData[1]["timeline"]["xpDiffPerMinDeltas"]["0-10"] / 10) + 1;
+      chartConfig["data"]["datasets"][0]["data"][0] = neutralCS;
+      chartConfig["data"]["datasets"][0]["data"][1] = neutralDMG;
+      chartConfig["data"]["datasets"][0]["data"][2] = neutralXP;
+      document.getElementById('csdiff').innerHTML = matchData[1]["timeline"]["csDiffPerMinDeltas"]["0-10"] + " CS/MIN";
+      document.getElementById('dmgdiff').innerHTML = matchData[1]["timeline"]["damageTakenDiffPerMinDeltas"]["0-10"] + " HP/MIN";
+      document.getElementById('xpdiff').innerHTML = matchData[1]["timeline"]["xpDiffPerMinDeltas"]["0-10"] + " XP/MIN";
+      if (matchData[1]["timeline"]["csDiffPerMinDeltas"]["0-10"] > 0){
+        document.getElementById('csdiff').style.color = "green";
+      }
+      else{
+        document.getElementById('csdiff').style.color = "red";
+      }
+      if (matchData[1]["timeline"]["damageTakenDiffPerMinDeltas"]["0-10"] < 0){
+        document.getElementById('dmgdiff').style.color = "green";
+      }
+      else{
+        document.getElementById('dmgdiff').style.color = "red";
+      }
+      if (matchData[1]["timeline"]["xpDiffPerMinDeltas"]["0-10"] > 0){
+        document.getElementById('xpdiff').style.color = "green";
+      }
+      else{
+        document.getElementById('xpdiff').style.color = "red";
+      }
+      window.myRadar.update();
+    }
+  var summonerName = "SUMMONERNAME";
+  var http = new XMLHttpRequest();
+  http.open("GET", "http://trubstats.tru.io/apiCall:getData?" + summonerName, false);
+  http.send();
+  var playerJSON = JSON.parse(http.responseText);
+  console.log(playerJSON);
+  document.getElementById("sumIcon").src = "https://ddragon.leagueoflegends.com/cdn/8.24.1/img/profileicon/" + playerJSON["icon"] + ".png";
+  document.getElementById("plrLevel").innerHTML = "Level " + playerJSON["level"];
+  http = new XMLHttpRequest();
+  http.open("GET", "http://trubstats.tru.io/apiCall:getPopularChamps?" + playerJSON["id"], false);
+  http.send();
+  var imageJSON = JSON.parse(http.responseText);
+  http = new XMLHttpRequest();
+  http.open("GET", "https://ddragon.leagueoflegends.com/cdn/8.24.1/data/en_US/champion.json", false);
+  http.send();
+  var championJSON = JSON.parse(http.responseText);
+  for (i=0; i<5; i++){
+    for (key in championJSON["data"]){
+      if (championJSON["data"][key]["key"] == String(imageJSON[i])){
+        document.getElementById("pChamp" + i).src = "http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/" + key + ".png";
+      }
+    }
+  }
+    http = new XMLHttpRequest();
+    http.open("GET", "http://trubstats.tru.io/apiCall:getRanked?" + playerJSON["id"], false);
+    http.send();
+    document.getElementById("ranked").innerHTML = http.responseText;
+    http = new XMLHttpRequest();
+    http.open('GET', 'http://trubstats.tru.io/apiCall:getMatches?' + playerJSON["accId"], false);
+    http.send();
+    var matchJSON = JSON.parse(http.responseText);
+    console.log(matchJSON[0]);
+    for (i=0; i<10; i++){
+      document.getElementById('matchList').innerHTML+=`
+      <div style="width: 90%; margin: auto; height: 9%; border-style: solid" matchId="` + matchJSON[i]["gameId"] + `">
+            <div class="row" style="width: 100%; height: 100%;">
+              <div class="col-3">
+                <a href="javascript:loadMatch(` + matchJSON[i]["gameId"] + `);">
+                <img id="matchPic` + i + `" src="null" style="height: 100%; width: auto; margin: auto;">
+                </a>
+              </div>
+              <div class="col">
+                <p id="matchLane` + i + `" style="font-family: 'Bangers'; font-size: 230%; text-align: center;">
+                     ` + matchJSON[i]["lane"] + `
+                </p>
+              </div>
+            </div>
+            </div>
+
+      `
+    }
+    for (i=0; i<10; i++){
+    for (key in championJSON["data"]){
+      if (championJSON["data"][key]["key"] == String(matchJSON[i]["champion"])){
+        document.getElementById("matchPic" + i).src = "http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/" + key + ".png";
+      }
+    }
+      
+      //attach links to images in the match history portion and bake more detailed lane opponent stats show up in the mid. also do match breakdown bit
+  }
+  var chartConfig = {
+			type: 'radar',
+			data: {
+				labels: ['CSDiff', 'PokeDiff', 'DamageDiff'],
+				datasets: [{
+					label: 'Laning prowess',
+					backgroundColor: Chart.helpers.color(window.chartColors.red).alpha(0.2).rgbString(),
+					borderColor: window.chartColors.red,
+					pointBackgroundColor: window.chartColors.red,
+					data: [
+						10,
+            8,
+            6
+					]
+				}]
+			},
+			options: {
+				legend: {
+					position: 'top',
+				},
+				title: {
+					display: true,
+					text: 'Laning Breakdown'
+				},
+				scale: {
+					ticks: {
+						beginAtZero: true
+					}
+				}
+			}
+		};
+    window.onload = function(){
+      window.myRadar = new Chart(document.getElementById("graph"), chartConfig);
+     
+    }
+  </script>
+</html>
